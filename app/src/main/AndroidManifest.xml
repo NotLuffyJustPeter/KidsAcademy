@@ -25,6 +25,9 @@
         <activity android:name=".PantallaCarga">
         </activity>
 
+        <activity android:name=".PantallaSeleccion">
+        </activity>
+
         <activity android:name=".PantallaInicio">
         </activity>
 
