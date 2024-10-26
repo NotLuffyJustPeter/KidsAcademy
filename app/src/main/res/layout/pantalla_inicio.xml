@@ -163,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Aprender es como un superpoder: ¡te hace más fuerte!"
+            android:text="@string/aprenderf"
             android:fontFamily="@font/supersonic_rocketship"
             android:textColor="#00796B"
             android:textSize="20sp" />
