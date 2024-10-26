@@ -34,6 +34,9 @@
         <activity android:name=".PantallaLogin">
         </activity>
 
+        <activity android:name=".PantallaRegistro">
+        </activity>
+
         <activity android:name=".Spanish">
         </activity>
 
