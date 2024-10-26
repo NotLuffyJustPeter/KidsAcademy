@@ -14,7 +14,9 @@
     <string name="registrar">Registrarse</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
     <string name="bienvenido">Bienvenido a Kids Academy</string>
-    <string name="los_grandes_logros_comienzan_con_peque_os_esfuerzos">¡Los grandes logros comienzan con pequeños esfuerzos!</string>
+    <string name="logros">¡Los grandes logros comienzan con pequeños esfuerzos!</string>
+    <string name="seleccionar">Selecciona una opción:</string>
+    <string name="aprenderf">Aprender es como un superpoder: ¡te hace más fuerte!</string>
 
 
 </resources>

@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="324dp"
         android:fontFamily="@font/ananda"
-        android:text="Selecciona una opción:"
+        android:text="@string/seleccionar"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
         android:layout_height="64dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/ananda"
-        android:text="@string/los_grandes_logros_comienzan_con_peque_os_esfuerzos"
+        android:text="@string/logros"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
@@ -91,11 +91,11 @@
         android:id="@+id/ivBack"
         android:layout_width="351dp"
         android:layout_height="95dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="520dp"
         android:src="@drawable/gatobac"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
