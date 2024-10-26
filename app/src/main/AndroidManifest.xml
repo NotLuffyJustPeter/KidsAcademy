@@ -21,6 +21,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".PantallaCarga">
+        </activity>
+
+        <activity android:name=".PantallaInicio">
+        </activity>
+
+        <activity android:name=".PantallaLogin">
+        </activity>
+
+        <activity android:name=".Spanish">
+        </activity>
+
+        <activity android:name=".Math">
+        </activity>
+
+        <activity android:name=".Ciencias">
+        </activity>
+
+        <activity android:name=".Etica">
+        </activity>
+
     </application>
 
 </manifest>
