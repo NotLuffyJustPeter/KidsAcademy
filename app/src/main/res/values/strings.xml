@@ -11,6 +11,10 @@
     <string name="math">Math</string>
     <string name="tica">Ética</string>
     <string name="ciencias">Ciencias</string>
+    <string name="registrar">Registrarse</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="bienvenido">Bienvenido a Kids Academy</string>
+    <string name="los_grandes_logros_comienzan_con_peque_os_esfuerzos">¡Los grandes logros comienzan con pequeños esfuerzos!</string>
 
 
 </resources>
