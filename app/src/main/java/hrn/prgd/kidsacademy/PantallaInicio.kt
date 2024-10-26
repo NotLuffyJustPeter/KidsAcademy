@@ -21,12 +21,12 @@ class PantallaInicio : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun onEthicsClick(view: View) {
+    fun onEticaClick(view: View) {
         val intent = Intent(this, Etica::class.java)
         startActivity(intent)
     }
 
-    fun onScienceClick(view: View) {
+    fun onCienciasClick(view: View) {
         val intent = Intent(this, Ciencias::class.java)
         startActivity(intent)
     }
