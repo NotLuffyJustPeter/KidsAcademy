@@ -1,20 +1,46 @@
 package hrn.prgd.kidsacademy
 
-class PantallaLogin(private val nombre: String, private val edad: String, private val contrasena: String) {
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
-    fun validarDatos(): Boolean {
-        return nombre.isNotEmpty() && edad.isNotEmpty() && contrasena.isNotEmpty()
+class PantallaLogin : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.pantalla_login)
+
+        val etNombre = findViewById<EditText>(R.id.etNombre)
+        val etContrasena = findViewById<EditText>(R.id.etContrasena)
+        val btnIngresar = findViewById<Button>(R.id.btnIngresar)
+
+        btnIngresar.setOnClickListener {
+            val nombre = etNombre.text.toString()
+            val contrasena = etContrasena.text.toString()
+
+            if (iniciarSesion(nombre, contrasena)) {
+                Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
+
+                // Aquí rediriges a la pantalla de inicio
+                val intent = Intent(this, PantallaInicio::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                Toast.makeText(this, "Datos incorrectos. Revisa tu información", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
-    fun validarEdad(): Boolean {
-        return edad.toIntOrNull()?.let { it > 5 } ?: false
-    }
+    private fun iniciarSesion(nombre: String, contrasena: String): Boolean {
+        val sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+        val storedNombre = sharedPreferences.getString("nombre", null)
+        val storedContrasena = sharedPreferences.getString("contrasena", null)
 
-    fun validarContrasena(): Boolean {
-        return contrasena.length >= 6
-    }
-
-    fun iniciarSesion(): Boolean {
-        return validarDatos() && validarEdad() && validarContrasena()
+        return storedNombre == nombre && storedContrasena == contrasena
     }
 }
+
