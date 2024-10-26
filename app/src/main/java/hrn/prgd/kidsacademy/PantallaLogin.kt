@@ -25,7 +25,6 @@ class PantallaLogin : AppCompatActivity() {
             if (iniciarSesion(nombre, contrasena)) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
 
-                // Aquí rediriges a la pantalla de inicio
                 val intent = Intent(this, PantallaInicio::class.java)
                 startActivity(intent)
                 finish()

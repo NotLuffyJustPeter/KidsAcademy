@@ -24,12 +24,10 @@ class PantallaRegistro : AppCompatActivity() {
             val edad = etEdad.text.toString()
             val contrasena = etContrasena.text.toString()
 
-            // Validar e insertar el nuevo usuario en SharedPreferences
             if (validarRegistro(nombre, edad, contrasena)) {
                 guardarUsuario(nombre, edad, contrasena)
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
 
-                // Redirigir a la pantalla de inicio de sesión
                 val intent = Intent(this, PantallaLogin::class.java)
                 startActivity(intent)
                 finish()

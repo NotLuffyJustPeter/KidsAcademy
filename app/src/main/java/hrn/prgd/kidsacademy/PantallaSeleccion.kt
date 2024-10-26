@@ -14,7 +14,6 @@ class PantallaSeleccion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pantalla_seleccion)
 
-        // Inicializa los botones usando findViewById
         btnIniciarSesion = findViewById(R.id.btnIniciarSesion)
         btnRegistrar = findViewById(R.id.btnRegistrar)
 
