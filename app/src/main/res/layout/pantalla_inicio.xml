@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E0F7FA"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/comfy_feeling"
+        android:text="@string/elige_tu_m_dulo"
+        android:textColor="#00796B"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <!-- Módulo Spanish -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#80DEEA"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onSpanishClick"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="131dp"
+                android:layout_height="120dp"
+                android:src="@drawable/spanishico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/comfy_feeling"
+                android:text="@string/spanish"
+                android:textColor="#004D40"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- Módulo Math -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#FFCCBC"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onMathClick"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="131dp"
+                android:src="@drawable/mathico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/comfy_feeling"
+                android:text="@string/math"
+                android:textColor="#D84315"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- Módulo Ética -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#C5E1A5"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onEticaClick"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="126dp"
+                android:src="@drawable/eticaico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/comfy_feeling"
+                android:text="@string/tica"
+                android:textColor="#33691E"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <!-- Módulo Ciencias -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#FFECB3"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onCienciasClick"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="117dp"
+                android:src="@drawable/cienciasico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/comfy_feeling"
+                android:text="@string/ciencias"
+                android:textColor="#FFA000"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/buho" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Aprender es como un superpoder: ¡te hace más fuerte!"
+            android:fontFamily="@font/supersonic_rocketship"
+            android:textColor="#00796B"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
