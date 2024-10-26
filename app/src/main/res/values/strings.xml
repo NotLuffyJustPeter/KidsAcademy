@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Kids Academy</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="kids_academy">Kids Academy</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="nombre">Nombre</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="edad">Edad</string>
+    <string name="spanish">Spanish</string>
+    <string name="elige_tu_m_dulo">Elige tu módulo</string>
+    <string name="math">Math</string>
+    <string name="tica">Ética</string>
+    <string name="ciencias">Ciencias</string>
+
+
 </resources>
