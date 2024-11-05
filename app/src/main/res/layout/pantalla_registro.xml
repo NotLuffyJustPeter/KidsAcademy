@@ -11,15 +11,24 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/ananda"
         android:text="@string/kids_academy"
         android:textColor="@android:color/white"
         android:textSize="38sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="195dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/buhoreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
     <EditText
         android:id="@+id/etNombre"
@@ -38,20 +47,37 @@
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
-        android:id="@+id/etEdad"
+        android:id="@+id/etCorreo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:backgroundTint="@android:color/white"
-        android:hint="@string/edad"
-        android:textSize="25sp"
         android:fontFamily="@font/comfy_feeling"
-        android:inputType="number"
+        android:hint="@string/Correo"
+        android:inputType="textEmailAddress"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etNombre"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/etFechaNacimiento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/comfy_feeling"
+        android:hint="@string/Fecha_nacimiento"
+        android:focusable="false"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
@@ -68,33 +94,23 @@
         android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etEdad"
+        app:layout_constraintTop_toBottomOf="@id/etFechaNacimiento"
         app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@android:color/white"
         android:fontFamily="@font/comfy_feeling"
         android:text="@string/registrar"
         android:textColor="#C393E5"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etContrasena" />
 
-    <ImageView
-        android:id="@+id/ivUserIcon"
-        android:layout_width="195dp"
-        android:layout_height="168dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/buhoreg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
