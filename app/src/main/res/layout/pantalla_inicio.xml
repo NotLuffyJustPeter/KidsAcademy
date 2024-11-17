@@ -91,7 +91,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:background="#C5E1A5"
+            android:background="#FFECB3"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
@@ -110,7 +110,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/comfy_feeling"
                 android:text="@string/tica"
-                android:textColor="#33691E"
+                android:textColor="#FFA000"
                 android:textSize="25sp" />
         </LinearLayout>
 
@@ -121,7 +121,7 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
-            android:background="#FFECB3"
+            android:background="#C5E1A5"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center"
@@ -140,7 +140,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/comfy_feeling"
                 android:text="@string/ciencias"
-                android:textColor="#FFA000"
+                android:textColor="#33691E"
                 android:textSize="25sp" />
         </LinearLayout>
 

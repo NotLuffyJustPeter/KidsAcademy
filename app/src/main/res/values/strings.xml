@@ -6,9 +6,14 @@
     <string name="nombre">Nombre</string>
     <string name="contrase_a">Contraseña</string>
     <string name="edad">Edad</string>
-    <string name="spanish">Spanish</string>
+    <string name="spanish">Español</string>
     <string name="elige_tu_m_dulo">Elige tu módulo</string>
-    <string name="math">Math</string>
+    <string name="elige_nivel">Elige un nivel</string>
+    <string name="nivel1">Nivel 1</string>
+    <string name="nivel2">Nivel 2</string>
+    <string name="nivel3">Nivel 3</string>
+    <string name="nivel4">Nivel 4</string>
+    <string name="math">Matemáticas</string>
     <string name="tica">Ética</string>
     <string name="ciencias">Ciencias</string>
     <string name="registrar">Registrarse</string>
@@ -20,6 +25,8 @@
     <string name="Correo">Correo</string>
     <string name="Fecha_nacimiento">Fecha de Nacimiento</string>
     <string name="viewcontra">Mostrar contraseña</string>
-
+    <string name="completo">Felicidades por completar el módulo, ¡Sigue así! y lograrás tus objetivos</string>
+    <string name="falta1">Debes completar el nivel 1 de cada módulo para continuar</string>
+    <string name="falta2">Debes completar el nivel 2 de cada módulo para continuar</string>
 
 </resources>

@@ -30,4 +30,5 @@ class PantallaInicio : AppCompatActivity() {
         val intent = Intent(this, Ciencias::class.java)
         startActivity(intent)
     }
+
 }
