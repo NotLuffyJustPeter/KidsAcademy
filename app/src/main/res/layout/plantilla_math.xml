@@ -15,6 +15,7 @@
             android:id="@+id/Titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfy_feeling"
             android:text="Elige la respuesta correcta"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -37,6 +38,7 @@
                 android:backgroundTint="#f8ab5e"
                 android:layout_width="match_parent"
                 android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
                 android:layout_height="wrap_content"
                 android:text="A" />
 
@@ -44,6 +46,7 @@
                 android:id="@+id/Opcion2"
                 android:backgroundTint="#f8ab5e"
                 android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="A" />
@@ -51,6 +54,7 @@
             <Button
                 android:id="@+id/Opcion3"
                 android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
                 android:backgroundTint="#f8ab5e"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +64,7 @@
                 android:id="@+id/Opcion4"
                 android:backgroundTint="#f8ab5e"
                 android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="A" />
@@ -71,6 +76,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Correcto"
+            android:fontFamily="@font/comfy_feeling"
             android:visibility="invisible"
             android:layout_margin="50dp"
             android:background="#7ed554"
@@ -83,7 +89,7 @@
 
     <LinearLayout
         android:id="@+id/pantallaResultado"
-        android:layout_width="match_parent"
+        android:layout_width="290dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
@@ -94,20 +100,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="24sp"
-            android:layout_marginBottom="16dp"
-            android:text="Resultados: 0/10 correctas" />
+            android:textStyle="bold"
+            android:textColor="#da2e00"
+            android:fontFamily="@font/comfy_feeling"
+            android:textAlignment="center"
+            android:layout_marginBottom="50dp"
+            android:text="Resultados:\n 0/10 correctas" />
 
         <Button
             android:id="@+id/btnReiniciar"
-            android:layout_width="wrap_content"
+            android:backgroundTint="#f8ab5e"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfy_feeling"
             android:text="Reiniciar"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="15dp" />
 
         <Button
             android:id="@+id/btnSalir"
-            android:layout_width="wrap_content"
+            android:backgroundTint="#f8ab5e"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfy_feeling"
             android:text="Salir" />
 
     </LinearLayout>

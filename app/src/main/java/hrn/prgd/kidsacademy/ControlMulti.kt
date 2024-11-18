@@ -13,7 +13,7 @@ import android.widget.TextView
 import java.util.Locale
 import java.util.Random
 
-class ControlSuma : LinearLayout {
+class ControlMulti : LinearLayout {
     var resulText: TextView? = null
     var mensaje: TextView? = null
     var generadorOperacion: GeneradorOperaciones? = null
@@ -78,7 +78,7 @@ class ControlSuma : LinearLayout {
     }
 
     private fun GenerarNueva() {
-        generadorOperacion!!.generateOperation(1)
+        generadorOperacion!!.generateOperation(3)
         val resultCadena: String = generadorOperacion!!.result
         val resultado = resultCadena.toDouble()
         val resultadoFormateado = String.format(Locale.getDefault(), "%.2f", resultado)

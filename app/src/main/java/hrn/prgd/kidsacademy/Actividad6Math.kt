@@ -6,6 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 class Actividad6Math : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actividad1_math)
+        setContentView(R.layout.actividad6_math)
     }
 }

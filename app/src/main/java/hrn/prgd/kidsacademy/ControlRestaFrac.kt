@@ -13,7 +13,7 @@ import android.widget.TextView
 import java.util.Locale
 import java.util.Random
 
-class ControlSuma : LinearLayout {
+class ControlRestaFrac : LinearLayout {
     var resulText: TextView? = null
     var mensaje: TextView? = null
     var generadorOperacion: GeneradorOperaciones? = null
@@ -78,104 +78,41 @@ class ControlSuma : LinearLayout {
     }
 
     private fun GenerarNueva() {
-        generadorOperacion!!.generateOperation(1)
+        generadorOperacion!!.generateOperation(6)
         val resultCadena: String = generadorOperacion!!.result
-        val resultado = resultCadena.toDouble()
-        val resultadoFormateado = String.format(Locale.getDefault(), "%.2f", resultado)
+        val numeros = resultCadena.split("/".toRegex()).dropLastWhile { it.isEmpty() }
+            .toTypedArray()
+        val num1 = numeros[0].toInt()
+        val num2 = numeros[1].toInt()
         caso = Random().nextInt(4)
         resetBotonoes()
         when (caso) {
             0 -> {
-                opcion1!!.text = resultadoFormateado
-                opcion2!!.text = String.format(
-                    Locale.getDefault(),
-                    "%.2f",
-                    resultado + (Random().nextInt(3) + 1)
-                )
-                opcion3!!.text = String.format(
-                    Locale.getDefault(),
-                    "%.2f",
-                    resultado - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)
-                )
-                opcion4!!.text = String.format(
-                    Locale.getDefault(),
-                    "%.2f",
-                    resultado + (Random().nextInt(9) + 1) + (Random().nextInt(9) + 1) + (Random().nextInt(
-                        9
-                    ) + 1)
-                )
+                opcion1!!.text = resultCadena
+                opcion2!!.text = (num1 + (Random().nextInt(6) + 1) + (Random().nextInt(6) + 1)).toString() + "/" + (num2 + (Random().nextInt(6) + 1) + (Random().nextInt(6) + 1)).toString()
+                opcion3!!.text = (num1 - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)).toString()
+                opcion4!!.text = (num1 + (Random().nextInt(6) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1)).toString()
             }
 
             1 -> {
-                opcion2!!.text = resultadoFormateado
-                opcion1!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado + (Random().nextInt(3) + 1)
-                    )
-                opcion3!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)
-                    )
-                opcion4!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado + (Random().nextInt(9) + 1) + (Random().nextInt(9) + 1) + (Random().nextInt(
-                            9
-                        ) + 1)
-                    )
+                opcion2!!.text = resultCadena
+                opcion1!!.text = (num1 + (Random().nextInt(6) + 1) + (Random().nextInt(6) + 1)).toString() + "/" + (num2 + (Random().nextInt(7) + 1) + (Random().nextInt(6) + 1)).toString()
+                opcion3!!.text = (num1 - (Random().nextInt(6) + 1) - (Random().nextInt(8) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1) - (Random().nextInt(9) + 1)).toString()
+                opcion4!!.text = (num1 + (Random().nextInt(6) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1)).toString()
             }
 
             2 -> {
-                opcion3!!.text = resultadoFormateado
-                opcion2!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado + (Random().nextInt(3) + 1)
-                    )
-                opcion1!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)
-                    )
-                opcion4!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado + (Random().nextInt(9) + 1) + (Random().nextInt(9) + 1) + (Random().nextInt(
-                            9
-                        ) + 1)
-                    )
+                opcion3!!.text = resultCadena
+                opcion2!!.text = (num1 - (Random().nextInt(7) + 1)).toString() + "/" + (num2 + (Random().nextInt(7) + 1)).toString()
+                opcion1!!.text = (num1 - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1) - (Random().nextInt(9) + 1)).toString()
+                opcion4!!.text = (num1 + (Random().nextInt(6) + 1) + (Random().nextInt(6) + 1)).toString() + "/" + (num2 + (Random().nextInt(7) + 1)).toString()
             }
 
             3 -> {
-                opcion4!!.text = resultadoFormateado
-                opcion2!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado + (Random().nextInt(3) + 1)
-                    )
-                opcion3!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado - (Random().nextInt(6) + 1) - (Random().nextInt(6) + 1)
-                    )
-                opcion1!!.text =
-                    String.format(
-                        Locale.getDefault(),
-                        "%.2f",
-                        resultado + (Random().nextInt(9) + 1) + (Random().nextInt(9) + 1) + (Random().nextInt(
-                            9
-                        ) + 1)
-                    )
+                opcion4!!.text = resultCadena
+                opcion2!!.text = (num1 + (Random().nextInt(6) + 1) + (Random().nextInt(6) + 1)).toString() + "/" + (num2 + (Random().nextInt(7) + 1) + (Random().nextInt(6) + 1)).toString()
+                opcion3!!.text = (num1 + (Random().nextInt(6) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1)).toString()
+                opcion1!!.text = (num1 - (Random().nextInt(6) + 1)).toString() + "/" + (num2 - (Random().nextInt(6) + 1)).toString()
             }
         }
     }

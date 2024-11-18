@@ -16,27 +16,27 @@ class Math : AppCompatActivity() {
     }
 
     fun onActividad2Click(view: View) {
-        val intent = Intent(this, Math::class.java)
+        val intent = Intent(this, Actividad2Math::class.java)
         startActivity(intent)
     }
 
     fun onActividad3Click(view: View) {
-        val intent = Intent(this, Etica::class.java)
+        val intent = Intent(this, Actividad3Math::class.java)
         startActivity(intent)
     }
 
     fun onActividad4Click(view: View) {
-        val intent = Intent(this, Ciencias::class.java)
+        val intent = Intent(this, Actividad4Math::class.java)
         startActivity(intent)
     }
 
     fun onActividad5Click(view: View) {
-        val intent = Intent(this, Etica::class.java)
+        val intent = Intent(this, Actividad5Math::class.java)
         startActivity(intent)
     }
 
     fun onActividad6Click(view: View) {
-        val intent = Intent(this, Ciencias::class.java)
+        val intent = Intent(this, Actividad6Math::class.java)
         startActivity(intent)
     }
 
