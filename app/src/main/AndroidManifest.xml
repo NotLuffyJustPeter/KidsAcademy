@@ -49,6 +49,9 @@
         <activity android:name=".Etica">
         </activity>
 
+        <activity android:name=".Actividad1Math">
+        </activity>
+
     </application>
 
 </manifest>
