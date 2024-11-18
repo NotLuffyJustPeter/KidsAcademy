@@ -49,7 +49,23 @@
         <activity android:name=".Etica">
         </activity>
 
+        <!--LLAMADA A TODAS LAS ACTIVIADES DE MATEMATICAS-->
         <activity android:name=".Actividad1Math">
+        </activity>
+
+        <activity android:name=".Actividad2Math">
+        </activity>
+
+        <activity android:name=".Actividad3Math">
+        </activity>
+
+        <activity android:name=".Actividad4Math">
+        </activity>
+
+        <activity android:name=".Actividad5Math">
+        </activity>
+
+        <activity android:name=".Actividad6Math">
         </activity>
 
     </application>
