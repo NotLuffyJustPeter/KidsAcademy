@@ -94,7 +94,6 @@
         android:orientation="vertical"
         android:gravity="center"
         android:visibility="gone">
-
         <TextView
             android:id="@+id/resultadoTexto"
             android:layout_width="wrap_content"
@@ -106,7 +105,6 @@
             android:textAlignment="center"
             android:layout_marginBottom="50dp"
             android:text="Resultados:\n 0/10 correctas" />
-
         <Button
             android:id="@+id/btnReiniciar"
             android:backgroundTint="#f8ab5e"
@@ -116,7 +114,6 @@
             android:fontFamily="@font/comfy_feeling"
             android:text="Reiniciar"
             android:layout_marginBottom="15dp" />
-
         <Button
             android:id="@+id/btnSalir"
             android:backgroundTint="#f8ab5e"
@@ -125,6 +122,5 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/comfy_feeling"
             android:text="Salir" />
-
     </LinearLayout>
 </LinearLayout>

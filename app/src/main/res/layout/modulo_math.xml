@@ -57,7 +57,7 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/actividad1math" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/actividad2math" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -145,7 +145,7 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/actividad3math" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -175,7 +175,7 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/actividad4math" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -233,7 +233,7 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/actividad5math" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -263,7 +263,7 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/actividad6math" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -287,7 +287,7 @@
                 android:layout_width="140dp"
                 android:layout_height="142dp"
                 android:layout_marginTop="16dp"
-                android:src="@drawable/buho" />
+                android:src="@drawable/trofeo" />
 
             <TextView
                 android:layout_width="wrap_content"
