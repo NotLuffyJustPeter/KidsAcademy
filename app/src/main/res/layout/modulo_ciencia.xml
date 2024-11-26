@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 1"
+                    android:text="Animales 1"
                     android:textColor="#33691E"
                     android:textSize="25sp" />
             </LinearLayout>

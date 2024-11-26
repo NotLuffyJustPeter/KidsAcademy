@@ -68,6 +68,15 @@
         <activity android:name=".Actividad6Math">
         </activity>
 
+        <activity android:name="Actividad1Ciencias">
+        </activity>
+
+        <activity android:name="Resultado1Ciencias">
+        </activity>
+
+        <activity android:name=".Actividad2Ciencias">
+        </activity>
+
     </application>
 
 </manifest>

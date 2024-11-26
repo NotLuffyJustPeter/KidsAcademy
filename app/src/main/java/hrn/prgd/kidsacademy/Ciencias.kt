@@ -11,12 +11,12 @@ class Ciencias : AppCompatActivity() {
         setContentView(R.layout.modulo_ciencia)
     }
     fun onActividad1Click(view: View) {
-        val intent = Intent(this, Spanish::class.java)
+        val intent = Intent(this, Actividad1Ciencias::class.java)
         startActivity(intent)
     }
 
     fun onActividad2Click(view: View) {
-        val intent = Intent(this, Math::class.java)
+        val intent = Intent(this, Actividad2Ciencias::class.java)
         startActivity(intent)
     }
 
