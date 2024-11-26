@@ -57,16 +57,16 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/arreglarelmundo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 1"
+                    android:text="Empatía"
                     android:textColor="#FFA000"
-                    android:textSize="25sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <!-- Módulo Math -->
@@ -87,16 +87,16 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/perdonar" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 2"
+                    android:text="Perdón"
                     android:textColor="#FFA000"
-                    android:textSize="25sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </GridLayout>
 
@@ -145,16 +145,16 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/giganteegoista" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 3"
+                    android:text="Egoismo"
                     android:textColor="#FFA000"
-                    android:textSize="25sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <!-- Módulo Math -->
@@ -175,16 +175,16 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/cerditointeligente" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 4"
+                    android:text="Perseverancia"
                     android:textColor="#FFA000"
-                    android:textSize="25sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </GridLayout>
 
@@ -233,16 +233,16 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/robletriste" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 5"
+                    android:text="Aceptación"
                     android:textColor="#FFA000"
-                    android:textSize="25sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <!-- Módulo Math -->
@@ -263,16 +263,16 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/osonocomparte" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 6"
+                    android:text="Compartir"
                     android:textColor="#FFA000"
-                    android:textSize="25sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
         </GridLayout>
 

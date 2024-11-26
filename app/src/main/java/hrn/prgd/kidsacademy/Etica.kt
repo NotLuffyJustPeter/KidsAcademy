@@ -12,32 +12,32 @@ class Etica : AppCompatActivity() {
     }
 
     fun onActividad1Click(view: View) {
-        val intent = Intent(this, Spanish::class.java)
+        val intent = Intent(this, Actividad1Etica::class.java)
         startActivity(intent)
     }
 
     fun onActividad2Click(view: View) {
-        val intent = Intent(this, Math::class.java)
+        val intent = Intent(this, Actividad2Etica::class.java)
         startActivity(intent)
     }
 
     fun onActividad3Click(view: View) {
-        val intent = Intent(this, Etica::class.java)
+        val intent = Intent(this, Actividad3Etica::class.java)
         startActivity(intent)
     }
 
     fun onActividad4Click(view: View) {
-        val intent = Intent(this, Ciencias::class.java)
+        val intent = Intent(this, Actividad4Etica::class.java)
         startActivity(intent)
     }
 
     fun onActividad5Click(view: View) {
-        val intent = Intent(this, Etica::class.java)
+        val intent = Intent(this, Actividad5Etica::class.java)
         startActivity(intent)
     }
 
     fun onActividad6Click(view: View) {
-        val intent = Intent(this, Ciencias::class.java)
+        val intent = Intent(this, Actividad6Etica::class.java)
         startActivity(intent)
     }
 }
