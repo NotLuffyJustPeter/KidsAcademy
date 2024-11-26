@@ -77,6 +77,45 @@
         <activity android:name=".Actividad2Ciencias">
         </activity>
 
+        <!--LLAMADA A TODAS LAS ACTIVIADES DE ETICA-->
+        <activity android:name=".Actividad1Etica">
+        </activity>
+
+        <activity android:name=".Actividad2Etica">
+        </activity>
+
+        <activity android:name=".Actividad3Etica">
+        </activity>
+
+        <activity android:name=".Actividad4Etica">
+        </activity>
+
+        <activity android:name=".Actividad5Etica">
+        </activity>
+
+        <activity android:name=".Actividad6Etica">
+        </activity>
+
+        <!--LLAMADA A TODAS LAS ACTIVIADES DE ESPAÑOL-->
+        <activity android:name=".Actividad1Spanish">
+        </activity>
+
+        <activity android:name=".Actividad2Spanish">
+        </activity>
+
+        <activity android:name=".Actividad3Spanish">
+        </activity>
+
+        <activity android:name=".Actividad4Spanish">
+        </activity>
+
+        <activity android:name=".Actividad5Spanish">
+        </activity>
+
+        <activity android:name=".Actividad6Spanish">
+        </activity>
+
+
     </application>
 
 </manifest>
