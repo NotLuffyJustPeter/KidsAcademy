@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#ffe2cf"
+    android:background="#eded10"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#f8ab5e"
+            android:backgroundTint="#d56914"
             android:fontFamily="@font/comfy_feeling"
             android:text="Reproducir" />
 
@@ -65,7 +65,7 @@
                 android:id="@+id/Opcion1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#f8ab5e"
+                android:backgroundTint="#d56914"
                 android:fontFamily="@font/comfy_feeling"
                 android:text="A"
                 android:textColor="@color/white" />
@@ -74,7 +74,7 @@
                 android:id="@+id/Opcion2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#f8ab5e"
+                android:backgroundTint="#d56914"
                 android:fontFamily="@font/comfy_feeling"
                 android:text="A"
                 android:textColor="@color/white" />
@@ -83,7 +83,7 @@
                 android:id="@+id/Opcion3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#f8ab5e"
+                android:backgroundTint="#d56914"
                 android:fontFamily="@font/comfy_feeling"
                 android:text="A"
                 android:textColor="@color/white" />

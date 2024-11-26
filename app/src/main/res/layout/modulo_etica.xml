@@ -4,14 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#fff5d6"
+    android:background="#eded10"
     android:padding="16dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:background="#fff5d6"
+        android:background="#ffff48"
         android:padding="16dp">
 
         <TextView
@@ -20,7 +20,7 @@
             android:layout_marginBottom="24dp"
             android:fontFamily="@font/comfy_feeling"
             android:text="@string/elige_nivel"
-            android:textColor="#FFA000"
+            android:textColor="#d56914"
             android:textSize="24sp" />
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/comfy_feeling"
             android:text="@string/nivel1"
-            android:textColor="#FFA000"
+            android:textColor="#d56914"
             android:layout_gravity="left"
             android:textSize="24sp" />
         <GridLayout
@@ -46,7 +46,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#FFECB3"
+                android:background="#eee089"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -65,7 +65,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
                     android:text="Empatía"
-                    android:textColor="#FFA000"
+                    android:textColor="#d56914"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -76,7 +76,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#FFECB3"
+                android:background="#eee089"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -95,7 +95,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
                     android:text="Perdón"
-                    android:textColor="#FFA000"
+                    android:textColor="#d56914"
                     android:textSize="18sp" />
             </LinearLayout>
         </GridLayout>
@@ -107,7 +107,7 @@
             android:fontFamily="@font/comfy_feeling"
             android:layout_marginTop="24dp"
             android:text="@string/falta1"
-            android:textColor="#FFA000"
+            android:textColor="#d56914"
             android:textAlignment="center"
             android:textSize="20sp" />
         <TextView
@@ -116,7 +116,7 @@
             android:fontFamily="@font/comfy_feeling"
             android:layout_marginTop="24dp"
             android:text="@string/nivel2"
-            android:textColor="#FFA000"
+            android:textColor="#d56914"
             android:layout_gravity="left"
             android:textSize="24sp" />
         <GridLayout
@@ -134,7 +134,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#FFECB3"
+                android:background="#eee089"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -153,7 +153,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
                     android:text="Egoismo"
-                    android:textColor="#FFA000"
+                    android:textColor="#d56914"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -164,7 +164,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#FFECB3"
+                android:background="#eee089"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -183,7 +183,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
                     android:text="Perseverancia"
-                    android:textColor="#FFA000"
+                    android:textColor="#d56914"
                     android:textSize="18sp" />
             </LinearLayout>
         </GridLayout>
@@ -195,7 +195,7 @@
             android:fontFamily="@font/comfy_feeling"
             android:layout_marginTop="24dp"
             android:text="@string/falta2"
-            android:textColor="#FFA000"
+            android:textColor="#d56914"
             android:textAlignment="center"
             android:textSize="20sp" />
         <TextView
@@ -204,7 +204,7 @@
             android:fontFamily="@font/comfy_feeling"
             android:layout_marginTop="24dp"
             android:text="@string/nivel3"
-            android:textColor="#FFA000"
+            android:textColor="#d56914"
             android:layout_gravity="left"
             android:textSize="24sp" />
         <GridLayout
@@ -222,7 +222,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#FFECB3"
+                android:background="#eee089"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -241,7 +241,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
                     android:text="Aceptación"
-                    android:textColor="#FFA000"
+                    android:textColor="#d56914"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -252,7 +252,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#FFECB3"
+                android:background="#eee089"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -271,7 +271,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
                     android:text="Compartir"
-                    android:textColor="#FFA000"
+                    android:textColor="#d56914"
                     android:textSize="18sp" />
             </LinearLayout>
         </GridLayout>
@@ -295,7 +295,7 @@
                 android:layout_marginStart="16dp"
                 android:text="@string/completo"
                 android:fontFamily="@font/supersonic_rocketship"
-                android:textColor="#FFA000"
+                android:textColor="#d56914"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
