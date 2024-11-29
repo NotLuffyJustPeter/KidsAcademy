@@ -243,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Comprensión"
+                    android:text="Profesiones"
                     android:textColor="#004D40"
                     android:textSize="19sp" />
             </LinearLayout>
