@@ -14,10 +14,10 @@ import android.widget.TextView
 import java.util.Locale
 import java.util.Random
 
-class ControlAnimal1 : LinearLayout {
+class ControlCuerpo1 : LinearLayout {
     var resulText: TextView? = null
     var mensaje: TextView? = null
-    var generadorAnimales: GeneradorAnimales? = null
+    var generadorCuerpo: GeneradorCuerpo? = null
     var botones: LinearLayout? = null
     var pantallaResultado: LinearLayout? = null
     var pantallaExamen: LinearLayout? = null
@@ -30,7 +30,7 @@ class ControlAnimal1 : LinearLayout {
     var caso: Int = 0
     var correctas: Int = 0
     var contador: Int = 0
-    val opciones = listOf("León", "Chango", "Elefante", "Tigre", "Armadillo", "Búho", "Puerco espin","Guepardo","Puma","Panda")
+    val opciones = listOf("Cabeza", "Oreja", "Nariz", "Boca", "Mano", "Ojos", "Labios","Brazo","Piernas","Pie")
 
     constructor(context: Context?) : super(context) {
         inicializar()
@@ -50,9 +50,9 @@ class ControlAnimal1 : LinearLayout {
 
     fun inicializar() {
         val li = LayoutInflater.from(context)
-        li.inflate(R.layout.plantilla_ciencia, this, true)
+        li.inflate(R.layout.plantilla2_ciencia, this, true)
         resulText = findViewById<TextView>(R.id.resultadoTexto)
-        generadorAnimales = findViewById(R.id.GeneradorAnimal)
+        generadorCuerpo = findViewById(R.id.GeneradorCuerpo)
         botones = findViewById<LinearLayout>(R.id.Botones)
         pantallaExamen = findViewById<LinearLayout>(R.id.pantallaExamen)
         opcion1 = findViewById<Button>(R.id.Opcion1)
@@ -80,8 +80,8 @@ class ControlAnimal1 : LinearLayout {
     }
 
     private fun GenerarNueva() {
-        generadorAnimales!!.cambiarAnimal(contador)
-        val resultCadena: String = generadorAnimales!!.result.toString()
+        generadorCuerpo!!.cambiarCuerpo(contador)
+        val resultCadena: String = generadorCuerpo!!.result.toString()
         caso = Random().nextInt(4)
         resetBotonoes()
         when (caso) {

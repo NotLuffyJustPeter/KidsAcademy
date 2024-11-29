@@ -40,7 +40,7 @@ class Actividad1Ciencias : AppCompatActivity(), SensorEventListener {
     object GameData {
         var score: Int = 0
     }
-    private var gameTiempo = 10
+    private var gameTiempo = 40
     private var restanteTiempo = gameTiempo
     private val handler = Handler(Looper.getMainLooper())
 

@@ -77,6 +77,15 @@
         <activity android:name=".Actividad2Ciencias">
         </activity>
 
+        <activity android:name=".Actividad3Ciencias">
+        </activity>
+
+        <activity android:name=".Resultado2Ciencias">
+        </activity>
+
+        <activity android:name=".Actividad4Ciencias">
+        </activity>
+
     </application>
 
 </manifest>

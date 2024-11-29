@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#e5fccb"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/pantallaExamen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="Elige la respuesta correcta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#33691E"
+            android:layout_marginBottom="50dp"/>
+        <hrn.prgd.kidsacademy.GeneradorCuerpo
+            android:id="@+id/GeneradorCuerpo"
+            android:layout_width="290dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:id="@+id/Botones"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Opcion1"
+                android:backgroundTint="#C5E1A5"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
+                android:layout_height="wrap_content"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/Opcion2"
+                android:backgroundTint="#C5E1A5"
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/Opcion3"
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
+                android:backgroundTint="#C5E1A5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/Opcion4"
+                android:backgroundTint="#C5E1A5"
+                android:textColor="@color/white"
+                android:fontFamily="@font/comfy_feeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Correcto"
+            android:fontFamily="@font/comfy_feeling"
+            android:visibility="invisible"
+            android:layout_margin="50dp"
+            android:background="#7ed554"
+            android:textColor="#1d5f2e"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pantallaResultado"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/resultadoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#33691E"
+            android:fontFamily="@font/comfy_feeling"
+            android:textAlignment="center"
+            android:layout_marginBottom="50dp"
+            android:text="Resultados:\n 0/10 correctas" />
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:src="@drawable/cuerpocompleto"/>
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:backgroundTint="#C5E1A5"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="Reiniciar"
+            android:layout_marginBottom="15dp" />
+        <Button
+            android:id="@+id/btnSalir"
+            android:backgroundTint="#C5E1A5"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="Salir" />
+    </LinearLayout>
+</LinearLayout>
