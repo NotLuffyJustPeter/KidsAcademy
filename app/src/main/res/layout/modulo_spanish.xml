@@ -57,16 +57,16 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/silabas2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 1"
+                    android:text="Sílabas"
                     android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:textSize="19sp" />
             </LinearLayout>
 
             <!-- Módulo Math -->
@@ -87,16 +87,16 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/silabas1" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 2"
+                    android:text="Gramática"
                     android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:textSize="19sp" />
             </LinearLayout>
         </GridLayout>
 
@@ -128,10 +128,14 @@
             android:rowCount="1">
 
             <!-- Módulo Spanish -->
+
+            <!-- Módulo Math -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:layout_row="0"
                 android:layout_rowWeight="1"
+                android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:background="#80DEEA"
@@ -145,19 +149,18 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/sinonimos" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 3"
+                    android:text="Sinónimos"
                     android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:textSize="19sp" />
             </LinearLayout>
 
-            <!-- Módulo Math -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -175,16 +178,16 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/antonimos" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 4"
+                    android:text="Antónimos"
                     android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:textSize="19sp" />
             </LinearLayout>
         </GridLayout>
 
@@ -233,16 +236,16 @@
                 <ImageView
                     android:layout_width="131dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/spanishico" />
+                    android:src="@drawable/lectura1" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 5"
+                    android:text="Comprensión"
                     android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:textSize="19sp" />
             </LinearLayout>
 
             <!-- Módulo Math -->
@@ -263,16 +266,16 @@
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="131dp"
-                    android:src="@drawable/mathico" />
+                    android:src="@drawable/lectura2" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Actividad 6"
+                    android:text="Lectura"
                     android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:textSize="19sp" />
             </LinearLayout>
         </GridLayout>
 
