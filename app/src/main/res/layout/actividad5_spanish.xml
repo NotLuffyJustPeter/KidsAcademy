@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#6B4F22">
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="381dp"
+        android:layout_height="377dp"
+        android:columnCount="4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="75dp"
+            android:layout_height="71dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton14"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton15"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/fondomemo" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/comfy_feeling"
+        android:text="Encuentra los pares de Imagenes"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <LinearLayout
+        android:id="@+id/pantallaResultado"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/resultadoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="Resultados:\n Has completado el juego"
+            android:textAlignment="center"
+            android:textColor="#da2e00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#f8ab5e"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="Reiniciar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f8ab5e"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="Salir"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
