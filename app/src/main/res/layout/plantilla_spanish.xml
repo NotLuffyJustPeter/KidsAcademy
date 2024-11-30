@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:backgroundTint="#9BE2E5">
+    android:background="#82B1FF">
 
     <!-- Pantalla de examen -->
 
@@ -14,7 +14,7 @@
         android:id="@+id/pantallaExamen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:backgroundTint="#9BE2E5"
+        android:background="#82B1FF"
         android:orientation="vertical"
         android:padding="16dp"
         android:visibility="visible">
@@ -130,7 +130,7 @@
 
         <Button
             android:id="@+id/btnReiniciar"
-            android:backgroundTint="#6B9C07"
+            android:backgroundTint="#82B1FF"
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
 
         <Button
             android:id="@+id/btnSalir"
-            android:backgroundTint="#6B9C07"
+            android:backgroundTint="#82B1FF"
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

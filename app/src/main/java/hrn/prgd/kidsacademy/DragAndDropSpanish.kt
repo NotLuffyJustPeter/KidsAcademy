@@ -34,7 +34,7 @@ class DragAndDropSpanish (context: Context, attrs: AttributeSet? = null) : Relat
         ImageItem(R.drawable.pronombre5, "Pronombres")
     )
 
-    private val dropZoneColors = listOf(0xB28DFF80, 0xA3D8FF80, 0xA1E6D980)
+    private val dropZoneColors = listOf(0x7068de34, 0x70207e1d, 0x70ffb60f)
     private val dropZoneNames = listOf("Verbos", "Adjetivos", "Pronombres")
     private var correctas = 0
 

@@ -91,7 +91,7 @@ class ControlSilabas(context: Context, attrs: AttributeSet? = null) : Constraint
         for (silaba in randomSilabas) {
             val btnSilaba = Button(context).apply {
                 text = silaba
-                setBackgroundColor(Color.parseColor("#C5E1A5"))
+                setBackgroundColor(Color.parseColor("#80DEEA"))
                 setTextColor(Color.BLACK)
                 setOnClickListener {
                     manejarClicSilaba(silaba)
