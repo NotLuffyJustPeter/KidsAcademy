@@ -31,12 +31,12 @@ class Ciencias : AppCompatActivity() {
     }
 
     fun onActividad5Click(view: View) {
-        val intent = Intent(this, Etica::class.java)
+        val intent = Intent(this, Actividad5Ciencias::class.java)
         startActivity(intent)
     }
 
     fun onActividad6Click(view: View) {
-        val intent = Intent(this, Ciencias::class.java)
+        val intent = Intent(this, Actividad6Ciencias::class.java)
         startActivity(intent)
     }
 

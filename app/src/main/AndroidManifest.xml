@@ -83,7 +83,16 @@
         <activity android:name=".Resultado2Ciencias">
         </activity>
 
+        <activity android:name=".Resultado3Ciencias">
+        </activity>
+
         <activity android:name=".Actividad4Ciencias">
+        </activity>
+
+        <activity android:name=".Actividad5Ciencias">
+        </activity>
+
+        <activity android:name=".Actividad6Ciencias">
         </activity>
 
         <!--LLAMADA A TODAS LAS ACTIVIADES DE ETICA-->
