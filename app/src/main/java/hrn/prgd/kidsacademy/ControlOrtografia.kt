@@ -193,7 +193,7 @@ class ControlOrtografia : LinearLayout {
     }
 
     private fun salir() {
-        val intent = Intent(context, Ciencias::class.java)
+        val intent = Intent(context, Spanish::class.java)
         context.startActivity(intent)
         (context as Activity).finish()
     }
