@@ -133,6 +133,12 @@
         <activity android:name=".Actividad6Spanish">
         </activity>
 
+        <activity android:name=".Resultado2Spanish">
+        </activity>
+
+        <activity android:name=".ResultadoSpanish">
+        </activity>
+
 
     </application>
 

@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
             android:backgroundTint="#5A04AA"
             android:fontFamily="@font/comfy_feeling"
             android:text="Reproducir" />
