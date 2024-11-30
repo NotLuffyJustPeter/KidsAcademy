@@ -130,7 +130,7 @@
 
         <Button
             android:id="@+id/btnReiniciar"
-            android:backgroundTint="#82B1FF"
+            android:backgroundTint="#304FFE"
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
 
         <Button
             android:id="@+id/btnSalir"
-            android:backgroundTint="#82B1FF"
+            android:backgroundTint="#304FFE"
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
