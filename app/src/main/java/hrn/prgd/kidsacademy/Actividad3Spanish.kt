@@ -1,5 +1,6 @@
 package hrn.prgd.kidsacademy
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +13,7 @@ class Actividad3Spanish : AppCompatActivity() {
 
     private lateinit var dbHelper: DBHelper
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actividad3_spanish)

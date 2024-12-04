@@ -20,13 +20,10 @@ class ControlSinonimos : LinearLayout {
     private lateinit var opcion1: Button
     private lateinit var opcion2: Button
     private lateinit var opcion3: Button
-    private lateinit var opcion4: Button // Nuevo botón para la cuarta opción
+    private lateinit var opcion4: Button
     private var btnReiniciar: Button
     private var btnSalir: Button
 
-    private lateinit var dbHelper: DBHelper
-
-    private var caso: Int = 0
     private var puntaje: Int = 0
     private var contador: Int = 0
     private val totalPreguntas = 10

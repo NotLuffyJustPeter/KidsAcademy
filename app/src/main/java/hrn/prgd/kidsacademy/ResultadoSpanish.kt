@@ -27,8 +27,6 @@ class ResultadoSpanish : AppCompatActivity() {
         editor.apply()
         val intent = Intent(this, Puntajes::class.java)
         startActivity(intent)
-
-
         val btnReiniciar = findViewById<Button>(R.id.btnReiniciar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
 
@@ -40,7 +38,6 @@ class ResultadoSpanish : AppCompatActivity() {
             salir()
         }
 
-        // Desbloquea la siguiente actividad automáticamente
         dbHelper.desbloquearSiguienteActividad("actividad5")
         Toast.makeText(this, "¡Actividad 5 completada! Actividad 6 desbloqueada.", Toast.LENGTH_SHORT).show()
     }
@@ -48,12 +45,12 @@ class ResultadoSpanish : AppCompatActivity() {
     private fun reiniciarActividad() {
         val intent = Intent(this, Actividad5Spanish::class.java)
         startActivity(intent)
-        finish() // Finaliza la actividad actual para no dejarla en el stack
+        finish()
     }
 
     private fun salir() {
-        val intent = Intent(this, Spanish::class.java) // O cualquier otra actividad principal
+        val intent = Intent(this, Spanish::class.java)
         startActivity(intent)
-        finish() // Finaliza la actividad actual
+        finish()
     }
 }
