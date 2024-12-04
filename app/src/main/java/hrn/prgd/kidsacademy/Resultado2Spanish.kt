@@ -22,6 +22,16 @@ class Resultado2Spanish : AppCompatActivity() {
         val resultText = findViewById<TextView>(R.id.resultText)
         resultText.text = "¡Felicidades! Asignaste correctamente los $correctCount elementos."
 
+
+        val puntaje2 = correctCount - 5
+        val sharedPreferences = getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt("puntaje2", puntaje2)
+        editor.apply()
+        val intent = Intent(this, Puntajes::class.java)
+        startActivity(intent)
+
+
         val btnReiniciar = findViewById<Button>(R.id.btnReiniciar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
 

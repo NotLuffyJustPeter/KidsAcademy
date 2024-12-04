@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
         <TextView
             android:id="@+id/Titulo"
             android:layout_width="wrap_content"
@@ -20,12 +21,11 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#33691E"
-            android:layout_marginBottom="50dp"/>
+            android:layout_marginBottom="10dp"/>
         <hrn.prgd.kidsacademy.GeneradorPlaneta
             android:id="@+id/GeneradorPlaneta"
             android:layout_width="290dp"
-            android:layout_height="300dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_height="300dp" />
         <TextView
             android:id="@+id/pregunta"
             android:layout_width="290dp"
@@ -35,7 +35,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#33691E"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="25dp"/>
         <LinearLayout
             android:id="@+id/Botones"
             android:layout_width="290dp"
@@ -82,17 +82,17 @@
         <TextView
             android:id="@+id/mensaje"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Correcto"
-            android:fontFamily="@font/comfy_feeling"
-            android:visibility="invisible"
+            android:layout_height="48dp"
             android:layout_margin="50dp"
             android:background="#7ed554"
+            android:fontFamily="@font/comfy_feeling"
+            android:padding="10dp"
+            android:text="Correcto"
+            android:textAlignment="center"
             android:textColor="#1d5f2e"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textAlignment="center"/>
+            android:visibility="invisible" />
     </LinearLayout>
 
 

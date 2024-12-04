@@ -1,6 +1,7 @@
 package hrn.prgd.kidsacademy
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.graphics.Color
 import android.util.AttributeSet
@@ -135,6 +136,13 @@ class ControlAntonimos : LinearLayout {
         pantallaExamen.visibility = GONE
         resulText.text = "Resultados: $puntaje/$totalPreguntas correctas"
         pantallaResultado.visibility = VISIBLE
+
+        val sharedPreferences = context.getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt("puntaje4", puntaje)
+        editor.apply()
+        val intent = Intent(context, Puntajes::class.java)
+        context.startActivity(intent)
     }
 
     private fun reiniciar() {

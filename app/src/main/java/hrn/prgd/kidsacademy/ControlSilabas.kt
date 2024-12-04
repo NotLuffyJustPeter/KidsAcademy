@@ -1,6 +1,7 @@
 package hrn.prgd.kidsacademy
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.graphics.Color
 import android.util.AttributeSet
@@ -137,8 +138,15 @@ class ControlSilabas(context: Context, attrs: AttributeSet? = null) : Constraint
             Locale.getDefault(),
             "Resultados:\n %d/%d correctas",
             correctas,
-            10 // Mostrar solo 10 intentos
+            10
         )
+
+        val sharedPreferences = context.getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt("puntaje1", correctas)
+        editor.apply()
+        val intent = Intent(context, Puntajes::class.java)
+        context.startActivity(intent)
     }
 
     private fun reiniciarJuego() {

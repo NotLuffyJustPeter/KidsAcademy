@@ -17,7 +17,7 @@ class Actividad5Math : AppCompatActivity() {
         setContentView(R.layout.actividad5_math)
 
         dbHelper = DBHelper(this)
-        val ControlSumaFrac = findViewById<ControlSuma>(R.id.ControlSumaFrac)
+        val ControlSumaFrac = findViewById<ControlSumaFrac>(R.id.ControlSumaFrac)
         correctas = ControlSumaFrac.correctas
 
         val btnFinalizar = findViewById<Button>(R.id.btnSalir)
@@ -27,9 +27,9 @@ class Actividad5Math : AppCompatActivity() {
 
             if (isApproved) {
                 dbHelper.desbloquearSiguienteActividad("actividad5math")
-                Toast.makeText(this, "¡Actividad 5 completada! Actividad 6 desbloqueada.", Toast.LENGTH_SHORT).show()
-            } else {
                 Toast.makeText(this, "¡No aprobaste la actividad 5, intenta nuevamente!", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "¡Actividad 5 completada! Actividad 6 desbloqueada.", Toast.LENGTH_SHORT).show()
             }
 
             val resultIntent = Intent()

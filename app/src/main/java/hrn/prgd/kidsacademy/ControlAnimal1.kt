@@ -2,6 +2,7 @@ package hrn.prgd.kidsacademy
 
 import android.app.Activity
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.graphics.Color
 import android.util.AttributeSet
@@ -170,6 +171,13 @@ class ControlAnimal1 : LinearLayout {
         resulText!!.text =
             String.format(Locale.getDefault(), "Resultados:\n %d/10 correctas", correctas)
         pantallaResultado!!.visibility = VISIBLE
+
+        val sharedPreferences = context.getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt("ciepuntaje2", correctas)
+        editor.apply()
+        val intent = Intent(context, Puntajes::class.java)
+        context.startActivity(intent)
     }
 
     private fun reiniciar() {

@@ -25,6 +25,14 @@ class Resultado2Ciencias : AppCompatActivity() {
         val resultText = findViewById<TextView>(R.id.resultText)
         resultText.text = "¡Felicidades! Asignaste correctamente los $correctCount alimentos."
 
+        val ciepuntaje3 = correctCount - 5
+        val sharedPreferences = getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt("ciepuntaje3", ciepuntaje3)
+        editor.apply()
+        val intent = Intent(this, Puntajes::class.java)
+        startActivity(intent)
+
         val btnReiniciar = findViewById<Button>(R.id.btnReiniciar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
 

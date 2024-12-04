@@ -1,6 +1,7 @@
 package hrn.prgd.kidsacademy
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.graphics.Color
 import android.util.AttributeSet
@@ -137,21 +138,14 @@ class ControlSinonimos : LinearLayout {
     private fun mostrarPantallaResultados() {
         pantallaExamen.visibility = GONE
         resulText.text = "Resultados: $puntaje/$totalPreguntas correctas"
-
-        // Verificar si el puntaje es suficiente para desbloquear la siguiente actividad
-        if (puntaje >= 7) {
-            // Desbloquear la siguiente actividad (por ejemplo, Actividad 4)
-            dbHelper.desbloquearSiguienteActividad("actividad3")  // Cambia "actividad3" por el nombre adecuado
-            mensaje.text = "¡Felicidades! Has completado la actividad y desbloqueado la siguiente."
-            mensaje.setBackgroundColor(Color.parseColor("#7ed554"))
-            mensaje.setTextColor(Color.parseColor("#1d5f2e"))
-        } else {
-            mensaje.text = "¡Intenta nuevamente! No has alcanzado el puntaje necesario."
-            mensaje.setBackgroundColor(Color.parseColor("#f56d51"))
-            mensaje.setTextColor(Color.parseColor("#d00505"))
-        }
-
         pantallaResultado.visibility = VISIBLE
+
+        val sharedPreferences = context.getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt("puntaje3", puntaje)
+        editor.apply()
+        val intent = Intent(context, Puntajes::class.java)
+        context.startActivity(intent)
     }
 
 

@@ -18,7 +18,7 @@ class Actividad4Math : AppCompatActivity() {
         setContentView(R.layout.actividad4_math)
 
         dbHelper = DBHelper(this)
-        val ControlDiv = findViewById<ControlSuma>(R.id.ControlDiv)
+        val ControlDiv = findViewById<ControlDiv>(R.id.ControlDiv)
         correctas = ControlDiv.correctas
 
         val btnFinalizar = findViewById<Button>(R.id.btnSalir)
@@ -28,9 +28,9 @@ class Actividad4Math : AppCompatActivity() {
 
             if (isApproved) {
                 dbHelper.desbloquearSiguienteActividad("actividad4math")
-                Toast.makeText(this, "¡Actividad 4 completada! Actividad 5 desbloqueada.", Toast.LENGTH_SHORT).show()
-            } else {
                 Toast.makeText(this, "¡No aprobaste la actividad 4, intenta nuevamente!", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "¡Actividad 4 completada! Actividad 5 desbloqueada.", Toast.LENGTH_SHORT).show()
             }
 
             val resultIntent = Intent()

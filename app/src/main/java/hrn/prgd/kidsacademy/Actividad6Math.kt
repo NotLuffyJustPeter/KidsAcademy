@@ -18,7 +18,7 @@ class Actividad6Math : AppCompatActivity() {
         setContentView(R.layout.actividad6_math)
 
         dbHelper = DBHelper(this)
-        val controlRestaFrac = findViewById<ControlSuma>(R.id.controlRestaFrac)
+        val controlRestaFrac = findViewById<ControlRestaFrac>(R.id.controlRestaFrac)
         correctas = controlRestaFrac.correctas
 
         val btnFinalizar = findViewById<Button>(R.id.btnSalir)
@@ -28,9 +28,9 @@ class Actividad6Math : AppCompatActivity() {
 
             if (isApproved) {
                 dbHelper.desbloquearSiguienteActividad("actividad6math")
-                Toast.makeText(this, "¡Actividad 6 completada!", Toast.LENGTH_SHORT).show()
-            } else {
                 Toast.makeText(this, "¡No aprobaste la actividad 6, intenta nuevamente!", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "¡Actividad 6 completada!", Toast.LENGTH_SHORT).show()
             }
 
             val resultIntent = Intent()

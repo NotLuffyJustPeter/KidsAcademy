@@ -17,7 +17,7 @@ class Actividad2Math : AppCompatActivity() {
 
         dbHelper = DBHelper(this)
 
-        val controlResta = findViewById<ControlSuma>(R.id.controlResta)
+        val controlResta = findViewById<ControlResta>(R.id.controlResta)
         val btnFinalizar = findViewById<Button>(R.id.btnSalir)
 
         btnFinalizar.setOnClickListener {

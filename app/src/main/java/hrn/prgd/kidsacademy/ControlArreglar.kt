@@ -1,6 +1,7 @@
 package hrn.prgd.kidsacademy
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.graphics.Color
 import android.media.MediaPlayer
@@ -166,6 +167,13 @@ class ControlArreglar : LinearLayout {
         resulText.text = "Resultados: $puntaje/$totalPreguntas correctas"
         pantallaResultado.visibility = VISIBLE
 
+        val sharedPreferences = context.getSharedPreferences("Puntajes", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        val puntajeConBonus = puntaje + 3
+        editor.putInt("etipuntaje1", puntajeConBonus)
+        editor.apply()
+        val intent = Intent(context, Puntajes::class.java)
+        context.startActivity(intent)
     }
 
     private fun reiniciar() {

@@ -17,7 +17,7 @@ class Actividad3Math : AppCompatActivity() {
         setContentView(R.layout.actividad3_math)
 
         dbHelper = DBHelper(this)
-        val ControlMulti = findViewById<ControlSuma>(R.id.ControlMulti)
+        val ControlMulti = findViewById<ControlMulti>(R.id.ControlMulti)
         correctas = ControlMulti.correctas
 
         val btnFinalizar = findViewById<Button>(R.id.btnSalir)
