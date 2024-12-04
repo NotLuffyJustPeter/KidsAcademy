@@ -8,26 +8,40 @@ import android.widget.Button
 import android.widget.LinearLayout.GONE
 import android.widget.LinearLayout.VISIBLE
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Resultado2Ciencias : AppCompatActivity() {
+    private lateinit var dbHelper: DBHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.resultados2_ciencias)
 
-        val correctCount = intent.getIntExtra("correct_count", 0)
+        dbHelper = DBHelper(this)
 
+        val correctCount = intent.getIntExtra("correct_count", 0)
         val resultText = findViewById<TextView>(R.id.resultText)
-        resultText.text = "¡Felicidades! Asignaste correctamente los $correctCount alimentos"
+        resultText.text = "¡Felicidades! Asignaste correctamente los $correctCount alimentos."
 
         val btnReiniciar = findViewById<Button>(R.id.btnReiniciar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
 
-        btnReiniciar.setOnClickListener(OnClickListener { v: View? -> reiniciar() })
-        btnSalir.setOnClickListener(OnClickListener { v: View? -> salir() })
+        btnReiniciar.setOnClickListener {
+            reiniciarActividad()
+        }
 
+        btnSalir.setOnClickListener {
+            salir()
+        }
+
+        // Desbloquea la siguiente actividad automáticamente
+        dbHelper.desbloquearSiguienteCienciasActividad("actividad3ciencias")
+        Toast.makeText(this, "¡Actividad 3 completada! Actividad 4 desbloqueada.", Toast.LENGTH_SHORT).show()
     }
-    private fun reiniciar() {
+
+    private fun reiniciarActividad() {
         val intent = Intent(this, Actividad3Ciencias::class.java)
         startActivity(intent)
         finish()

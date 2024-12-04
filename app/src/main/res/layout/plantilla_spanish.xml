@@ -138,6 +138,7 @@
             android:text="Reiniciar"
             android:layout_marginBottom="15dp" />
 
+
         <Button
             android:id="@+id/btnSalir"
             android:backgroundTint="#304FFE"

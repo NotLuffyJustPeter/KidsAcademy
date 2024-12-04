@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#ffe2cf">
+    android:background="#BB82EF">
 
     <!-- Generador de preguntas personalizado -->
     <hrn.prgd.kidsacademy.ControlOso
-        android:id="@+id/ControlOso"
+        android:id="@+id/ControlOso1"
         android:layout_width="388dp"
         android:layout_height="731dp"
         android:layout_margin="16dp" />

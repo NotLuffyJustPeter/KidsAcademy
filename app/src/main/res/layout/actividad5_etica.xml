@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#ffe2cf">
+    android:background="#BB82EF">
 
     <!-- Generador de preguntas personalizado -->
     <hrn.prgd.kidsacademy.ControlRoble

@@ -23,8 +23,7 @@ class ControlArreglar : LinearLayout {
     private var btnReiniciar: Button
     private var btnSalir: Button
 
-    private var caso: Int = 0  // Índice de la pregunta actual
-    private var puntaje: Int = 0  // Contador de respuestas correctas
+    var puntaje: Int = 0  // Contador de respuestas correctas
     private var contador: Int = 0 // Contador de preguntas respondidas
     private val totalPreguntas = 7  // Número de preguntas total
 
@@ -82,7 +81,6 @@ class ControlArreglar : LinearLayout {
         // Configurar acciones de reinicio y salida
         btnReiniciar.setOnClickListener { reiniciar() }
         btnSalir.setOnClickListener { salir() }
-
 
     }
 
@@ -167,6 +165,7 @@ class ControlArreglar : LinearLayout {
         pantallaExamen.visibility = GONE
         resulText.text = "Resultados: $puntaje/$totalPreguntas correctas"
         pantallaResultado.visibility = VISIBLE
+
     }
 
     private fun reiniciar() {
@@ -187,9 +186,9 @@ class ControlArreglar : LinearLayout {
         opcion1.isEnabled = true
         opcion2.isEnabled = true
         opcion3.isEnabled = true
-        opcion1.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion2.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion3.setBackgroundColor(Color.parseColor("#C5E1A5"))
+        opcion1.setBackgroundColor(Color.parseColor("#5A04AA"))
+        opcion2.setBackgroundColor(Color.parseColor("#5A04AA"))
+        opcion3.setBackgroundColor(Color.parseColor("#5A04AA"))
     }
 
     // Función para generar opciones incorrectas aleatorias
@@ -211,5 +210,7 @@ class ControlArreglar : LinearLayout {
         super.onDetachedFromWindow()
         mediaPlayer.release()
     }
+
+
 
 }

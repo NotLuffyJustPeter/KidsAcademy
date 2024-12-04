@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <hrn.prgd.kidsacademy.ControlSuma
-        android:id="@+id/OperationControl"
+        android:id="@+id/controlSuma"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -23,6 +23,8 @@ class ControlSinonimos : LinearLayout {
     private var btnReiniciar: Button
     private var btnSalir: Button
 
+    private lateinit var dbHelper: DBHelper
+
     private var caso: Int = 0
     private var puntaje: Int = 0
     private var contador: Int = 0
@@ -135,8 +137,23 @@ class ControlSinonimos : LinearLayout {
     private fun mostrarPantallaResultados() {
         pantallaExamen.visibility = GONE
         resulText.text = "Resultados: $puntaje/$totalPreguntas correctas"
+
+        // Verificar si el puntaje es suficiente para desbloquear la siguiente actividad
+        if (puntaje >= 7) {
+            // Desbloquear la siguiente actividad (por ejemplo, Actividad 4)
+            dbHelper.desbloquearSiguienteActividad("actividad3")  // Cambia "actividad3" por el nombre adecuado
+            mensaje.text = "¡Felicidades! Has completado la actividad y desbloqueado la siguiente."
+            mensaje.setBackgroundColor(Color.parseColor("#7ed554"))
+            mensaje.setTextColor(Color.parseColor("#1d5f2e"))
+        } else {
+            mensaje.text = "¡Intenta nuevamente! No has alcanzado el puntaje necesario."
+            mensaje.setBackgroundColor(Color.parseColor("#f56d51"))
+            mensaje.setTextColor(Color.parseColor("#d00505"))
+        }
+
         pantallaResultado.visibility = VISIBLE
     }
+
 
     private fun reiniciar() {
         contador = 0
@@ -157,10 +174,10 @@ class ControlSinonimos : LinearLayout {
         opcion2.isEnabled = true
         opcion3.isEnabled = true
         opcion4.isEnabled = true
-        opcion1.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion2.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion3.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion4.setBackgroundColor(Color.parseColor("#C5E1A5"))
+        opcion1.setBackgroundColor(Color.parseColor("#304FFE"))
+        opcion2.setBackgroundColor(Color.parseColor("#304FFE"))
+        opcion3.setBackgroundColor(Color.parseColor("#304FFE"))
+        opcion4.setBackgroundColor(Color.parseColor("#304FFE"))
     }
 
     private fun generarOpciones(respuestaCorrecta: String): List<String> {

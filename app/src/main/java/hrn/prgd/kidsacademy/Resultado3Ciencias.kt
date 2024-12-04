@@ -8,24 +8,39 @@ import android.widget.Button
 import android.widget.LinearLayout.GONE
 import android.widget.LinearLayout.VISIBLE
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Resultado3Ciencias : AppCompatActivity() {
+
+    private lateinit var dbHelper: DBHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.resultados3_ciencias)
 
+        dbHelper = DBHelper(this)
+
         val resultText = findViewById<TextView>(R.id.resultText)
-        resultText.text = "¡Felicidades! Encontraste todos los pares correspondientes"
+        resultText.text = "¡Felicidades! Encontraste todos los pares correspondientes."
 
         val btnReiniciar = findViewById<Button>(R.id.btnReiniciar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
 
-        btnReiniciar.setOnClickListener(OnClickListener { v: View? -> reiniciar() })
-        btnSalir.setOnClickListener(OnClickListener { v: View? -> salir() })
+        btnReiniciar.setOnClickListener {
+            reiniciarActividad()
+        }
 
+        btnSalir.setOnClickListener {
+            salir()
+        }
+
+        // Desbloquea la siguiente actividad automáticamente
+        dbHelper.desbloquearSiguienteCienciasActividad("actividad5ciencias")
+        Toast.makeText(this, "¡Actividad 5 completada! Actividad 6 desbloqueada.", Toast.LENGTH_SHORT).show()
     }
-    private fun reiniciar() {
+
+    private fun reiniciarActividad() {
         val intent = Intent(this, Actividad5Ciencias::class.java)
         startActivity(intent)
         finish()

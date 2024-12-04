@@ -127,6 +127,7 @@
             android:fontFamily="@font/comfy_feeling"
             android:text="Reiniciar"
             android:layout_marginBottom="15dp" />
+
         <Button
             android:id="@+id/btnSalir"
             android:backgroundTint="#C5E1A5"

@@ -42,7 +42,7 @@ class ControlAntonimos : LinearLayout {
     )
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
-        LayoutInflater.from(context).inflate(R.layout.plantilla_sinan, this, true)
+        LayoutInflater.from(context).inflate(R.layout.plantilla_anton, this, true)
 
         tituloPregunta = findViewById(R.id.tituloPregunta)
         resulText = findViewById(R.id.resultadoTexto)
@@ -156,10 +156,10 @@ class ControlAntonimos : LinearLayout {
         opcion2.isEnabled = true
         opcion3.isEnabled = true
         opcion4.isEnabled = true
-        opcion1.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion2.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion3.setBackgroundColor(Color.parseColor("#C5E1A5"))
-        opcion4.setBackgroundColor(Color.parseColor("#C5E1A5"))
+        opcion1.setBackgroundColor(Color.parseColor("#304FFE"))
+        opcion2.setBackgroundColor(Color.parseColor("#304FFE"))
+        opcion3.setBackgroundColor(Color.parseColor("#304FFE"))
+        opcion4.setBackgroundColor(Color.parseColor("#304FFE"))
     }
 
     private fun generarOpciones(respuestaCorrecta: String): List<String> {

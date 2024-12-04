@@ -41,6 +41,7 @@
 
             <!-- Módulo Spanish -->
             <LinearLayout
+                android:id="@+id/actividad1math"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -71,6 +72,7 @@
 
             <!-- Módulo Math -->
             <LinearLayout
+                android:id="@+id/actividad2math"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -129,6 +131,7 @@
 
             <!-- Módulo Spanish -->
             <LinearLayout
+                android:id="@+id/actividad3math"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -159,6 +162,7 @@
 
             <!-- Módulo Math -->
             <LinearLayout
+                android:id="@+id/actividad4math"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -217,6 +221,7 @@
 
             <!-- Módulo Spanish -->
             <LinearLayout
+                android:id="@+id/actividad5math"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
@@ -247,6 +252,7 @@
 
             <!-- Módulo Math -->
             <LinearLayout
+                android:id="@+id/actividad6math"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
