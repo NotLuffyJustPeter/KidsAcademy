@@ -31,6 +31,9 @@
         <activity android:name=".PantallaInicio">
         </activity>
 
+        <activity android:name=".Puntajes">
+        </activity>
+
         <activity android:name=".PantallaLogin">
         </activity>
 

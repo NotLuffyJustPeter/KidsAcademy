@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntajes por Módulo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Tabla principal Español-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:divider="@drawable/divider">
+
+            <TableRow
+                android:background="#80DEEA"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Módulo Español"
+                    android:textStyle="bold"
+                    android:textColor="#004D40"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#CBF7F0"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 1"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spapun1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#CBF7F0"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 2"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spapun2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#CBF7F0"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 3"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spapun3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#CBF7F0"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 4"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spapun4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#CBF7F0"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 5"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spapun5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="18dp"
+                android:background="#CBF7F0"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 6"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/spapun6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Tabla principal Matematicas-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:divider="@drawable/divider">
+
+            <TableRow
+                android:background="#FFCCBC"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Módulo Matemáticas"
+                    android:textStyle="bold"
+                    android:textColor="#D84315"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#EED7D4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 1"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/matpun1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#EED7D4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 2"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/matpun2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#EED7D4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 3"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/matpun3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#EED7D4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 4"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/matpun4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#EED7D4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 5"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/matpun5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="18dp"
+                android:background="#EED7D4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 6"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/matpun6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Tabla principal Ciencias-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:divider="@drawable/divider">
+
+            <TableRow
+                android:background="#C5E1A5"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Módulo Ciencias"
+                    android:textStyle="bold"
+                    android:textColor="#33691E"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#DEFAD2"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 1"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ciepun1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#DEFAD2"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 2"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ciepun2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#DEFAD2"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 3"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ciepun3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#DEFAD2"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 4"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ciepun4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#DEFAD2"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 5"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ciepun5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="18dp"
+                android:background="#DEFAD2"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 6"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/ciepun6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Tabla principal Etica-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:divider="@drawable/divider">
+
+            <TableRow
+                android:background="#FFECB3"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Módulo Ética"
+                    android:textStyle="bold"
+                    android:textColor="#FFA000"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#FAF6D1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 1"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/etipun1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#FAF6D1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 2"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/etipun2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+
+            <TableRow
+                android:background="#FAF6D1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 3"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/etipun3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#FAF6D1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 4"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/etipun4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:background="#FAF6D1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 5"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/etipun5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="18dp"
+                android:background="#FAF6D1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actividad 6"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Puntaje"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/etipun6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

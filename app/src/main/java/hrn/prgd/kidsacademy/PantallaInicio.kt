@@ -31,4 +31,8 @@ class PantallaInicio : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun onPuntajesClick(view: View) {
+        val intent = Intent(this, Puntajes::class.java)
+        startActivity(intent)
+    }
 }
