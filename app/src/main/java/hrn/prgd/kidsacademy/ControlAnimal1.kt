@@ -31,7 +31,8 @@ class ControlAnimal1 : LinearLayout {
     var caso: Int = 0
     var correctas: Int = 0
     var contador: Int = 0
-    val opciones = listOf("León", "Chango", "Elefante", "Tigre", "Armadillo", "Búho", "Puerco espin","Guepardo","Puma","Panda")
+    val opciones = listOf("León", "Chango", "Elefante", "Tigre", "Armadillo", "Búho",
+        "Puerco espin","Guepardo","Puma","Panda")
 
     constructor(context: Context?) : super(context) {
         inicializar()

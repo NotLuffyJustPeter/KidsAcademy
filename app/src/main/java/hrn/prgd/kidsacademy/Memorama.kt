@@ -205,22 +205,18 @@ class Memorama : View {
         val anchoBloque = measuredWidth / 4
         val altoBloque = measuredHeight / 3
         val pRelleno = Paint()
-
         if (mostrandoFelicidades) {
-            // Mostrar imagen de felicitaciones
             val bitmap = cargarBitmap(R.drawable.bien, measuredWidth, measuredHeight)
             bitmap?.let {
                 canvas.drawBitmap(it, null, Rect(0, 0, measuredWidth, measuredHeight), null)
             }
             return
         }
-
         for (i in bloques.indices) {
             val columna = i % 4
             val fila = i / 4
             val xInicio = columna * anchoBloque
             val yInicio = fila * altoBloque
-
             if (descubierto[i] || seleccionados.contains(i)) {
                 bloques[i]?.let { imagen ->
                     canvas.drawBitmap(
@@ -240,7 +236,6 @@ class Memorama : View {
                     pRelleno
                 )
             }
-
             val pBorde = Paint()
             pBorde.style = Paint.Style.STROKE
             pBorde.color = Color.BLACK

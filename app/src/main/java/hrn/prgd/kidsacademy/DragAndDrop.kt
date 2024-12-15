@@ -71,7 +71,6 @@ class DragAndDrop (context: Context, attrs: AttributeSet? = null) : RelativeLayo
         dropZoneNames.forEachIndexed { index, group ->
             val dropZone = RelativeLayout(context).apply {
                 layoutParams = LayoutParams(320, 320).apply {
-                    // 3 zonas en la parte superior (arriba)
                     if (index < 3) {
                         leftMargin = 40 + (index * 350)  // Espaciado entre zonas
                         topMargin = 800  // Zonas en la parte superior
@@ -79,11 +78,8 @@ class DragAndDrop (context: Context, attrs: AttributeSet? = null) : RelativeLayo
                         leftMargin = 220 + ((index - 3) * 350)
                         topMargin = 1150  // Zonas en la parte inferior
                     }
-
-                    // Fondo de color
                     setBackgroundColor(dropZoneColors[index].toInt())
                 }
-
                 // Agregar un TextView dentro de la drop zone para mostrar el nombre
                 val textView = TextView(context).apply {
                     text = group
@@ -93,10 +89,8 @@ class DragAndDrop (context: Context, attrs: AttributeSet? = null) : RelativeLayo
                         addRule(RelativeLayout.CENTER_IN_PARENT) // Centrar el texto en la zona
                     }
                 }
-
                 // Agregar el TextView a la zona
                 addView(textView)
-
                 // Listener para el drag and drop
                 setOnDragListener { _, event ->
                     when (event.action) {

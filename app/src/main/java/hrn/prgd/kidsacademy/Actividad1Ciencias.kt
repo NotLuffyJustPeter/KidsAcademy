@@ -289,18 +289,14 @@ class Actividad1Ciencias : AppCompatActivity(), SensorEventListener {
                     animal3?.let { canvas.drawBitmap(it, circleX - circleRadius, circleY - circleRadius, null) }
                 }
             }
-
             for (obstacle in obstacles) {
                 canvas.drawRect(obstacle, paintObstaculo)
             }
             canvas.drawRect(porteriaTop, paintPorteria)
-
-
             canvas.drawRect(765f, 0f, 975f, 105f, muestraScore)
             canvas.save()
             canvas.drawText("$restanteTiempo s", 830f, 80f, textPaint)
             canvas.restore()
-
             if (isGoal) {
                 completo?.let {
                     canvas.drawBitmap(it, (width - it.width) / 2f, (height - it.height) / 2f, null)
