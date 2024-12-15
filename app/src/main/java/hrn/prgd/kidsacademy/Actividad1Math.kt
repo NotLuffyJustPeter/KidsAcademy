@@ -1,5 +1,6 @@
 package hrn.prgd.kidsacademy
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
@@ -13,6 +14,7 @@ class Actividad1Math : AppCompatActivity() {
     private lateinit var dbHelper: DBHelper
     private var correctas: Int = 0
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.actividad1_math)

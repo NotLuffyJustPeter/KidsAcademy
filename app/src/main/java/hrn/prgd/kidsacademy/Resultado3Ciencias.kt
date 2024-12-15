@@ -18,12 +18,9 @@ class Resultado3Ciencias : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.resultados3_ciencias)
-
         dbHelper = DBHelper(this)
-
         val resultText = findViewById<TextView>(R.id.resultText)
         resultText.text = "¡Felicidades! Encontraste todos los pares correspondientes."
-
         val puntaje = 10
         val sharedPreferences = getSharedPreferences("Puntajes", MODE_PRIVATE)
         val editor = sharedPreferences.edit()
@@ -31,19 +28,15 @@ class Resultado3Ciencias : AppCompatActivity() {
         editor.apply()
         val intent = Intent(this, Puntajes::class.java)
         startActivity(intent)
-
         val btnReiniciar = findViewById<Button>(R.id.btnReiniciar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
-
         btnReiniciar.setOnClickListener {
             reiniciarActividad()
         }
-
         btnSalir.setOnClickListener {
             salir()
         }
 
-        // Desbloquea la siguiente actividad automáticamente
         dbHelper.desbloquearSiguienteCienciasActividad("actividad5ciencias")
         Toast.makeText(this, "¡Actividad 5 completada! Actividad 6 desbloqueada.", Toast.LENGTH_SHORT).show()
     }

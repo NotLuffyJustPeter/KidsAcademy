@@ -16,7 +16,6 @@ class Spanish : AppCompatActivity() {
 
         dbHelper = DBHelper(this)
 
-        // Verificar si las actividades están desbloqueadas
         checkAndUpdateActivities()
     }
 

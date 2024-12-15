@@ -22,7 +22,7 @@ class Actividad1Spanish : AppCompatActivity() {
         val btnFinalizar = findViewById<Button>(R.id.btnSalir)
 
         btnFinalizar.setOnClickListener {
-            val isApproved = correctCount >= 7  // Aprobación si la mitad o más son correctas
+            val isApproved = correctCount >= 7
 
             if (isApproved) {
                 dbHelper.desbloquearSiguienteActividad("actividad1")
