@@ -40,106 +40,14 @@
         <activity android:name=".PantallaRegistro">
         </activity>
 
-        <activity android:name=".Spanish">
+        <activity android:name=".Niveles">
         </activity>
 
-        <activity android:name=".Math">
-        </activity>
 
-        <activity android:name=".Ciencias">
-        </activity>
-
-        <activity android:name=".Etica">
-        </activity>
-
-        <!--LLAMADA A TODAS LAS ACTIVIADES DE MATEMATICAS-->
-        <activity android:name=".Actividad1Math">
-        </activity>
-
-        <activity android:name=".Actividad2Math">
-        </activity>
-
-        <activity android:name=".Actividad3Math">
-        </activity>
-
-        <activity android:name=".Actividad4Math">
-        </activity>
-
-        <activity android:name=".Actividad5Math">
-        </activity>
-
-        <activity android:name=".Actividad6Math">
-        </activity>
-
-        <activity android:name="Actividad1Ciencias">
-        </activity>
-
-        <activity android:name="Resultado1Ciencias">
-        </activity>
-
-        <activity android:name=".Actividad2Ciencias">
-        </activity>
-
-        <activity android:name=".Actividad3Ciencias">
-        </activity>
-
-        <activity android:name=".Resultado2Ciencias">
-        </activity>
-
-        <activity android:name=".Resultado3Ciencias">
-        </activity>
-
-        <activity android:name=".Actividad4Ciencias">
-        </activity>
-
-        <activity android:name=".Actividad5Ciencias">
-        </activity>
-
-        <activity android:name=".Actividad6Ciencias">
-        </activity>
-
-        <!--LLAMADA A TODAS LAS ACTIVIADES DE ETICA-->
-        <activity android:name=".Actividad1Etica">
-        </activity>
-
-        <activity android:name=".Actividad2Etica">
-        </activity>
-
-        <activity android:name=".Actividad3Etica">
-        </activity>
-
-        <activity android:name=".Actividad4Etica">
-        </activity>
-
-        <activity android:name=".Actividad5Etica">
-        </activity>
-
-        <activity android:name=".Actividad6Etica">
-        </activity>
 
         <!--LLAMADA A TODAS LAS ACTIVIADES DE ESPAÑOL-->
-        <activity android:name=".Actividad1Spanish">
-        </activity>
-
-        <activity android:name=".Actividad2Spanish">
-        </activity>
 
         <activity android:name=".Actividad3Spanish">
-        </activity>
-
-        <activity android:name=".Actividad4Spanish">
-        </activity>
-
-        <activity android:name=".Actividad5Spanish">
-        </activity>
-
-        <activity android:name=".Actividad6Spanish">
-        </activity>
-
-        <activity android:name=".Resultado2Spanish">
-        </activity>
-
-        <activity android:name=".ResultadoSpanish">
         </activity>
 
 

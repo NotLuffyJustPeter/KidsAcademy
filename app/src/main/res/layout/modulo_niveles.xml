@@ -1,214 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#e8c7ff"
+    android:background="#E0F7FA"
+    android:id="@+id/rootLayout"
     android:padding="16dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:background="#e8c7ff"
         android:padding="16dp">
+
         <TextView
+            android:id="@+id/categoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/comfy_feeling"
-            android:text="@string/elige_tu_m_dulo"
+            android:text="Hola"
             android:textColor="@color/white"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/nivelesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/comfy_feeling"
+            android:text="@string/elige_nivel"
+            android:textColor="#00796B"
             android:textSize="24sp" />
 
+
         <GridLayout
+            android:id="@+id/niveles"
             android:layout_width="match_parent"
-            android:layout_height="1300dp"
+            android:layout_height="500dp"
             android:layout_gravity="center"
             android:columnCount="2"
-            android:rowCount="6">
-
-            <!-- Módulo Math -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:background="#FFCCBC"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:onClick="onBanderasClick"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="130dp"
-                    android:layout_height="131dp"
-                    android:src="@drawable/banderas" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/comfy_feeling"
-                    android:text="Banderas"
-                    android:textColor="#D84315"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <!-- Módulo Ciencias -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:background="#ffdec2"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:onClick="onSeriesClick"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/series" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/comfy_feeling"
-                    android:text="Series"
-                    android:textColor="#ff7703"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <!-- Módulo Ética -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:background="#FFECB3"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:onClick="onPeliculasClick"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="129dp"
-                    android:layout_height="126dp"
-                    android:src="@drawable/peliculas" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/comfy_feeling"
-                    android:text="Películas"
-                    android:textColor="#FFA000"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <!-- Módulo Ciencias -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:background="#C5E1A5"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:onClick="onCulturaClick"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/cultura" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/comfy_feeling"
-                    android:text="Cultura"
-                    android:textColor="#33691E"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <!-- Módulo Ciencias -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:background="#adcf86"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:onClick="onHistoriaClick"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/historia" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/comfy_feeling"
-                    android:text="Historia"
-                    android:textColor="#518910"
-                    android:textSize="25sp" />
-            </LinearLayout>
-
-            <!-- Módulo Ciencias -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:background="#92ffc7"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:onClick="onArteClick"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/arte" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/comfy_feeling"
-                    android:text="Arte"
-                    android:textColor="#10cb6b"
-                    android:textSize="25sp" />
-            </LinearLayout>
+            android:rowCount="5">
 
             <!-- Módulo Spanish -->
             <LinearLayout
@@ -217,202 +49,260 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#80DEEA"
+                android:background="#c6c6c6"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
-                android:onClick="onGeografiaClick"
+                android:onClick="onActividad1Click"
                 android:orientation="vertical"
                 android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="131dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/geografia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Geografía"
-                    android:textColor="#004D40"
-                    android:textSize="25sp" />
+                    android:text="Nivel 1"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
             </LinearLayout>
 
-            <!-- Módulo Ciencias -->
+            <!-- Módulo Math -->
             <LinearLayout
+                android:id="@+id/actividad2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#3cd7ef"
+                android:background="#c6c6c6"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
-                android:onClick="onAnimeClick"
+                android:onClick="onActividad2Click"
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/anime" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Anime"
-                    android:textColor="#0147a5"
-                    android:textSize="25sp" />
+                    android:text="Nivel 2"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
             </LinearLayout>
 
-            <!-- Módulo Ciencias -->
+
+            <!-- Módulo Math -->
+
             <LinearLayout
+                android:id="@+id/actividad3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#b18dff"
+                android:background="#c6c6c6"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
-                android:onClick="onCienciasClick"
+                android:onClick="onActividad4Click"
                 android:orientation="vertical"
                 android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/ciencia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Ciencias"
-                    android:textColor="#3f1797"
-                    android:textSize="25sp" />
+                    android:text="Nivel 3"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
             </LinearLayout>
 
-            <!-- Módulo Ciencias -->
+            <!-- Módulo Spanish -->
             <LinearLayout
+                android:id="@+id/actividad4"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#a434f6"
+                android:background="#c6c6c6"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
-                android:onClick="onLibrosClick"
+                android:onClick="onActividad5Click"
                 android:orientation="vertical"
                 android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/libros" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Libros"
-                    android:textColor="#3e006b"
-                    android:textSize="25sp" />
+                    android:text="Nivel 4"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
             </LinearLayout>
 
-            <!-- Módulo Ciencias -->
+            <!-- Módulo Math -->
             <LinearLayout
+                android:id="@+id/actividad5"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#ffa8f5"
+                android:background="#c6c6c6"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
-                android:onClick="onVideojuegosClick"
+                android:onClick="onActividad6Click"
                 android:orientation="vertical"
                 android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/videojuegos" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Videojuegos"
-                    android:textColor="#ff00e2"
-                    android:textSize="25sp" />
+                    android:text="Nivel 5"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
             </LinearLayout>
 
-            <!-- Módulo Ciencias -->
+            <!-- Módulo Math -->
             <LinearLayout
+                android:id="@+id/actividad6"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-                android:background="#ff80bf"
+                android:background="#c6c6c6"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
-                android:onClick="onMusicaClick"
+                android:onClick="onActividad6Click"
                 android:orientation="vertical"
                 android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="125dp"
-                    android:layout_height="117dp"
-                    android:src="@drawable/musica" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/comfy_feeling"
-                    android:text="Música"
-                    android:textColor="#da0870"
-                    android:textSize="25sp" />
+                    android:text="Nivel 6"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
             </LinearLayout>
 
+            <!-- Módulo Math -->
+            <LinearLayout
+                android:id="@+id/actividad7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="#c6c6c6"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onActividad6Click"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/comfy_feeling"
+                    android:text="Nivel 7"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Módulo Math -->
+            <LinearLayout
+                android:id="@+id/actividad8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="#c6c6c6"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onActividad6Click"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/comfy_feeling"
+                    android:text="Nivel 8"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Módulo Math -->
+            <LinearLayout
+                android:id="@+id/actividad9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="#c6c6c6"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onActividad6Click"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/comfy_feeling"
+                    android:text="Nivel 9"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <!-- Módulo Math -->
+            <LinearLayout
+                android:id="@+id/actividad10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:background="#c6c6c6"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onActividad6Click"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/comfy_feeling"
+                    android:text="Nivel 10"
+                    android:textColor="#6e6e6e"
+                    android:textSize="19sp" />
+            </LinearLayout>
         </GridLayout>
-
-        <Button
-            android:id="@+id/btnPuntajes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Consulta Puntajes"
-            android:fontFamily="@font/comfy_feeling"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:onClick="onPuntajesClick"
-            android:padding="10dp"
-            android:backgroundTint="#00796B"/>
-        <Button
-            android:id="@+id/btnRaking"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ranking"
-            android:fontFamily="@font/comfy_feeling"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:onClick="onPuntajesClick"
-            android:padding="10dp"
-            android:backgroundTint="#00796B"/>
     </LinearLayout>
 </ScrollView>

@@ -156,7 +156,7 @@ class ControlSinonimos : LinearLayout {
     }
 
     private fun salir() {
-        val intent = Intent(context, Spanish::class.java)
+        val intent = Intent(context, Niveles::class.java)
         context.startActivity(intent)
     }
 
